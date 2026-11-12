@@ -37,3 +37,7 @@ flowchart LR
 <!-- module-panorama:end -->
 
 The [AWS overview](https://github.com/ZhongTyler/AgentWorkSpace) presents the full module network. This module retains original third-party notices and the reviewed 1.30.0 source record. Independent module versioning starts at 2.0.0.
+
+## 2.1.0 additions
+
+Report renderers include dependency summaries. Use `.agents/skills/human-research-expression/scripts/audit_html_dependencies.py` to inspect existing HTML runtime resources, source links and embedded-attachment references. Expression selection covers event, relationship and mechanism questions. This release uses committed method snapshots.

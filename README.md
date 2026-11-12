@@ -81,3 +81,7 @@ flowchart LR
 单游戏档案按[深度拆解流程](game-research/deep-game-analysis/README.md)执行：全域盘点、条件返回与本批/整作状态分开；研究产物供直接查阅，不参与Ingest或待消化登记。交付前反查原目标、重要遗漏、事实与证据深度；可选evidence-audit、source-fidelity与human-research-expression，缺少时按正文就地检查并说明，不自动安装。工程验证不替代研究充分性或读者理解。
 
 本版研究方法更新至v1.5，包含同稿制作、阶段控制与包内研究表达渲染器。真实资料、报告及关联目录由接收方在包外维护；安装不启动研究、采集、模型、调度或其他会话。
+
+## 单文件交付检查
+
+图解报告的构建入口增加依赖摘要。已有 HTML 可运行 `python .agents/skills/human-research-expression/scripts/audit_html_dependencies.py <report.html> --output <audit.json> --check-runtime`。运行资源、来源链接及内嵌附件的后续依赖按 [交付合同](.agents/skills/human-research-expression/references/sharing-and-dependencies.md) 核对。事件与关系表达按真实阅读问题选择。
