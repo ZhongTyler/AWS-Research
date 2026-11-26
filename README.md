@@ -85,3 +85,11 @@ flowchart LR
 ## 单文件交付检查
 
 图解报告的构建入口增加依赖摘要。已有 HTML 可运行 `python .agents/skills/human-research-expression/scripts/audit_html_dependencies.py <report.html> --output <audit.json> --check-runtime`。运行资源、来源链接及内嵌附件的后续依赖按 [交付合同](.agents/skills/human-research-expression/references/sharing-and-dependencies.md) 核对。事件与关系表达按真实阅读问题选择。
+
+## 2.2.0：持续试玩与编辑回执
+
+[系统研究](game-research/system-research/README.md)可从 Markdown 主本和 reader.json 生成同源 HTML，复用目录与领域导航，在模态浮层中保留原型状态、阅读位置与焦点。此分支需要 lxml、PowerShell 7；基础 Markdown 研究不需要这些附加依赖。包中不附真实游戏案例或素材。
+
+[可选编辑适配](game-research/deep-game-analysis/report-polish.md)绑定当前全文、导航短标题、图文位置和表达元数据，分别保留真实工具调用、整页理解、逐项保真、页面及采用依据。copy-polish 执行器和在线模型服务不在包内，只有已配置且授权时才调用；未配置时继续人工编辑与基础表达。
+
+[升级与恢复](upgrades/2.2.0.md) · [范围、来源与验证](docs/2.2.0-review.md)。独立版本从2.1.0升级至2.2.0，原输入格式和既有研究入口保留。

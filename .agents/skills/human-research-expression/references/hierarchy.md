@@ -40,6 +40,8 @@
 
 ## 制作与复核
 
+已有“第几组总览／小结”的稿件，先按其实际涵盖范围和位置回读。组总览放在本组细项之前并说明组内关系；只覆盖某个对象族的总览按该对象族命名。可在组首现有小节补短关系说明，保留稳定单元与锚点，避免为修结构重排全部研究身份。
+
 先按选定层级检查主干、分组和阅读顺序，再生成载体。采用章节结构时，另核每章主问题、总览与小结的实际含义和位置。共同核对细节有无漏归或重复归属、目录／书签目标和页码是否正确、整篇开头与结尾是否对应。新增综合继续按source-fidelity核条件和归因，并同时用humanizer-zh与anti-defensive-writing润色。层级和链接通过不证明读者已经形成整体认识。
 
 可选render_visual.py接受chapters和scene.role：book-overview、chapter-overview、detail、chapter-summary、book-conclusion。每章写id、number、title、question、overview_id、detail_ids、summary_id；scene保留稳定id，detail另有section_number。制作器核成员和顺序，并生成分层目录／PDF书签；原无chapters的独立图解分支仍可使用。不要把结构字段存在当成讲解已连贯。

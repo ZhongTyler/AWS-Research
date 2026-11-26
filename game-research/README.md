@@ -91,3 +91,5 @@ Research 只保存队列与研究判断，长期原文和 Raw/Wiki 由 Knowledge
 
 
 单游戏档案按[深度拆解流程](../game-research/deep-game-analysis/README.md)执行：全域盘点、条件返回与本批/整作状态分开；研究产物供直接查阅，不参与Ingest或待消化登记。交付前反查原目标、重要遗漏、事实与证据深度；可选evidence-audit、source-fidelity与human-research-expression，缺少时按正文就地检查并说明，不自动安装。工程验证不替代研究充分性或读者理解。
+
+完整业务系统的局部研究见[系统研究](system-research/README.md)，报告编辑及回执见[离线适配](deep-game-analysis/report-polish.md)。

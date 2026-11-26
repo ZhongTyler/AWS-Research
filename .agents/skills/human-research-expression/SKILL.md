@@ -66,3 +66,5 @@ description: 为已有研究案例或复杂报告判断哪些内容需要图解�
 已选单份HTML、需要总分总图解与原画面状态序列时，可用`scripts/render_visual_html.py`制作图解主线，再接同一报告的详细附录；见[渲染约定](references/rendering.md)。它复用原SVG图形并支持不改原图字节的局部观察、标记和空间/余额关系，不依赖PDF或字体安装。必要说明仍直接可读，放大用于核原件。
 
 方法依据及适用限制见[参考依据](references/methods.md)；它们是有边界的启发，不能替代本次真实读者反馈。
+
+已有报告纯文案修订保留原图卡位置、替代关系与交互，沿[维护合同](references/reader-maintenance.md)。同源系统研究可用[阅读页与持续原型](../../../game-research/system-research/reader-contract.md)。外部动画、插画或影片 Skill 仅在宿主可发现、已配置且授权时按表达缺口选用，不依赖私有工具路径。

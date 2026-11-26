@@ -41,3 +41,11 @@ The [AWS overview](https://github.com/ZhongTyler/AgentWorkSpace) presents the fu
 ## 2.1.0 additions
 
 Report renderers include dependency summaries. Use `.agents/skills/human-research-expression/scripts/audit_html_dependencies.py` to inspect existing HTML runtime resources, source links and embedded-attachment references. Expression selection covers event, relationship and mechanism questions. This release uses committed method snapshots.
+
+## 2.2.0: persistent prototypes and editorial receipts
+
+The [system-study route](game-research/system-research/README.md) projects Markdown and reader.json into HTML using the existing contents/domain navigation. Its modal keeps the prototype iframe alive across close/reopen, restores reader position and focus, and coordinates Escape handling. This optional branch requires lxml and PowerShell 7; basic Markdown research remains available without them. No real studies or game assets ship with this package.
+
+The [offline editorial adapter](game-research/deep-game-analysis/report-polish.md) binds the current draft, short navigation titles, visual positions and retained expression metadata. It distinguishes actual service execution, whole-report review, individual fidelity decisions, page checks and adoption. A compatible local copy-polish executor must be explicitly configured; online service and data/cost authorization are separate. Without that configuration, continue manual editing and basic expression.
+
+See [upgrade/recovery](upgrades/2.2.0.md) and [scope/source/validation](docs/2.2.0-review.md). Existing inputs and research entrypoints remain supported.

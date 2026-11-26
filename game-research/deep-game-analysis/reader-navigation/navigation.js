@@ -235,8 +235,9 @@
   if (wasRoute) revealRoute(domain, open);
   saveHistory();
  }
- function leaveReading() {
+ function leaveReading(target = model.sectionId) {
   rememberPosition();
+  if (model.sections.has(target)) model.setSection(target);
   preservePosition(() => { model.exit(); setTab('toc'); render(); });
   saveHistory();
   if (model.mode === 'plain') (open ? $('rn-assist') : trigger).focus({preventScroll:true});
@@ -296,7 +297,7 @@
   const action = event.target.closest('[data-reader-action]');
   if (action) {
    const card = action.closest('.rn-guide-card');
-   if (action.dataset.readerAction === 'exit') leaveReading();
+   if (action.dataset.readerAction === 'exit') leaveReading(card.dataset.target);
    else enterRoute(model.perspective(card.dataset.target),card.dataset.target,true,true);
    return;
   }

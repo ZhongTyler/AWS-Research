@@ -14,3 +14,5 @@ description: 围绕具体问题开展有来源、有适用边界的研究并交�
 搜集缺口按可发现的research-collection及包内game-evidence-collection选择路径。研究新增解释先维护正文与同源底稿，再生成HTML和导读。投入判断沿包内game-research/cost-evaluation/README.md，当前授权和接收方质量标准决定实际执行范围。
 
 研究交付同时核对专业内容、案例与反例，以及可复用原件的实际去向。工具或知识承接按接收方能力和授权执行，保留缺口、后续使用条件及实际消费反馈。表达按读者要理解的事件、关系或机制选择，复用 [表达选型](../human-research-expression/references/expression-selection.md)，单文件交付使用 [依赖审计](../human-research-expression/references/sharing-and-dependencies.md)。
+
+系统局部研究可按[完整系统入口](../../../game-research/system-research/README.md)组织证据、报告与独立原型；同源 HTML 可提供保留试玩状态的浮层。编辑按[可选报告适配](../../../game-research/deep-game-analysis/report-polish.md)绑定当前稿、真实调用和整页／逐项审订范围。

@@ -6,7 +6,7 @@ const path = require('node:path');
 const source = fs.readFileSync(path.join(__dirname,'navigation.js'),'utf8');
 const {sectionAtProbe} = require('./navigation.js');
 function boot(width, stored, search = '') {
- const elements = new Map(), media = [], storage = new Map(), windowEvents = {};
+ const elements = new Map(), media = [], storage = new Map(), windowEvents = {}, documentEvents = {};
  let extraHeight = 0;
  if (stored) storage.set('fixture.reader.sidebar-mode',stored);
  const context = {URL,URLSearchParams,Option:class {constructor(text,value){this.text=text;this.value=value}},
@@ -44,10 +44,14 @@ function boot(width, stored, search = '') {
  const body=element('body');
  context.document={getElementById:element,body,documentElement:{style:{setProperty(){}}},
   querySelectorAll(selector){if(selector==='[data-mode]')return modes;if(selector.includes('section[data-scene]'))return sections;if(selector==='.rn-guide-card')return [card];return []},
-  querySelector(){return null},addEventListener(){}};
+  querySelector(){return null},addEventListener(name,handler){documentEvents[name]=handler}};
  vm.runInNewContext(source,context);
  return {body,modes,storage,element,media,context,
   click(name){element(name).handlers.click()},sample(){windowEvents.scroll()},
+  exitCard(){
+   const action={dataset:{readerAction:'exit'},closest(){return card}};
+   documentEvents.click({target:{closest(){return action}}});
+  },
   resizeBar(height){extraHeight=height},label(){return element('rn-route-label').textContent}};
 }
 let assertions=0;
@@ -77,6 +81,17 @@ for(const height of [120,190,260]) {
  assert.equal(sectionAtProbe([{id:'overview',top:-500},{id:'loop',top:200},{id:'outside',top:900}],280),'loop');
 }
 const geometry=[];
+// A button belongs to its card even if the scroll probe just selected a
+// neighboring section. Exiting both levels must retain the clicked section.
+const exitPage=boot(1000,null,'?read=route&domain=play');
+exitPage.context.scrollY=1300;exitPage.sample();
+assert.match(exitPage.label(),/不在这条路线/);
+exitPage.exitCard();
+assert.equal(exitPage.context.history.state.reader.mode,'assist');
+assert.equal(exitPage.context.history.state.reader.sectionId,'loop');
+exitPage.exitCard();
+assert.equal(exitPage.context.history.state.reader.mode,'plain');
+assert.equal(exitPage.context.history.state.reader.sectionId,'loop');
 for(const width of [375,1000,1440]) {
  const boundary=boot(width,null,'?read=route&domain=play');
  boundary.context.scrollY=330;

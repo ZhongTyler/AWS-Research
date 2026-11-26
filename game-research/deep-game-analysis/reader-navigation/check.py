@@ -21,7 +21,7 @@ def check(report, *, trusted_large_report=False):
     validate_routes(report,config,original)
     # Only generated local reports opt in to large embedded-image input.
     tree=html.fromstring(raw, parser=html.HTMLParser(huge_tree=trusted_large_report, no_network=True))
-    old=html.fromstring(original, parser=html.HTMLParser(huge_tree=trusted_large_report, no_network=True))
+    old=html.fromstring(original.encode('utf-8'), parser=html.HTMLParser(huge_tree=trusted_large_report, no_network=True))
     ids=Counter(tree.xpath('//@id'))
     source_checks=[]
     for route in config['routes']:
@@ -51,7 +51,7 @@ def check(report, *, trusted_large_report=False):
         'original_scene_document_nodes_unchanged':[serialize(e) for e in tree.xpath('//*[@data-scene or @data-document]')]==[serialize(e) for e in old.xpath('//*[@data-scene or @data-document]')],
         'images_unchanged':tree.xpath('//img/@src')==old.xpath('//img/@src'),
         'original_scripts_unchanged':[e.text for e in tree.xpath('//script[not(starts-with(@id,"rn-"))]')]==[e.text for e in old.xpath('//script')],
-        'all_scripts_parsed_completely':[s.replace('\r\n','\n').replace('\r','\n') for s in re.findall(r'<script\b[^>]*>(.*?)</script\s*>',text,re.I|re.S)]==[(e.text or '') for e in tree.xpath('//script')],
+        'all_scripts_parsed_completely':[s.replace('\r\n','\n').replace('\r','\n') for s in re.findall(r'<script\b[^>]*>(.*?)</script\s*>',text,re.I|re.S)]==[(e.text or '').replace('\r\n','\n').replace('\r','\n') for e in tree.xpath('//script')],
         'no_duplicate_ids':not any(n>1 for n in ids.values()),
         'no_repeated_id_attributes':not AttributeCheck(text).repeated,
         'no_broken_internal_links':not bad_links,

@@ -1,0 +1,435 @@
+{
+  "source": "cc1a38d5b1b27fcc6ebf7c8ddd5b2cd70c57aa68",
+  "changed_existing": [
+    ".agents/skills/game-evidence-collection/SKILL.md",
+    ".agents/skills/human-research-expression/SKILL.md",
+    ".agents/skills/human-research-expression/references/hierarchy.md",
+    ".agents/skills/human-research-expression/references/reader-maintenance.md",
+    ".agents/skills/research-study/SKILL.md",
+    ".gitattributes",
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "RESEARCH_PROTOCOL.md",
+    "game-research/README.md",
+    "game-research/cost-evaluation/README.md",
+    "game-research/deep-game-analysis/README.md",
+    "game-research/deep-game-analysis/decomposition-and-batching.md",
+    "game-research/deep-game-analysis/dossier.py",
+    "game-research/deep-game-analysis/knowledge-handoff.md",
+    "game-research/deep-game-analysis/output-contract.md",
+    "game-research/deep-game-analysis/reader-navigation/README.md",
+    "game-research/deep-game-analysis/reader-navigation/check.py",
+    "game-research/deep-game-analysis/reader-navigation/navigation.js",
+    "game-research/deep-game-analysis/reader-navigation/test_build.py",
+    "game-research/deep-game-analysis/reader-navigation/test_modes.cjs",
+    "game-research/deep-game-analysis/reuse-evaluation.md",
+    "game-research/deep-game-analysis/stable-baseline.json",
+    "game-research/deep-game-analysis/test_dossier.py",
+    "game-research/deep-game-analysis/verification.md",
+    "game-research/deep-game-analysis/workflow-control.md",
+    "game-research/development-support.md",
+    "game-research/media-capture.md",
+    "game-research/video-text.md",
+    "proactive/README.md",
+    "proactive/reporting.md",
+    "proactive/review.py",
+    "proactive/reviews/README.md",
+    "proactive/schedule-template.json",
+    "reference-library/README.md",
+    "reference-library/catalog.json",
+    "sources.json",
+    "templates/validation-candidate.md",
+    "validation/README.md"
+  ],
+  "new_general_candidates": [
+    ".agents/skills/human-research-expression/references/statistical-figures-and-method-diagrams.md",
+    ".agents/skills/human-research-expression/scripts/figure_qa/LICENSE",
+    ".agents/skills/human-research-expression/scripts/figure_qa/audit_figure_collisions.py",
+    ".agents/skills/human-research-expression/scripts/figure_qa/audit_panel_alignment.py",
+    ".agents/skills/human-research-expression/scripts/figure_qa/audit_pdf_text.py",
+    ".agents/skills/human-research-expression/scripts/figure_qa/source-lock.json",
+    ".agents/skills/human-research-expression/scripts/render_method_diagram.py",
+    "game-research/system-research/README.md",
+    "game-research/system-research/build_reader.py",
+    "game-research/system-research/coverage.md",
+    "game-research/system-research/reader-assets/prototype.js",
+    "game-research/system-research/reader-assets/reader.css",
+    "game-research/system-research/reader-contract.md",
+    "game-research/system-research/test_reader.py"
+  ],
+  "decisions": [
+    {
+      "path": ".agents/skills/game-evidence-collection/SKILL.md",
+      "decision": "adapted"
+    },
+    {
+      "path": ".agents/skills/human-research-expression/SKILL.md",
+      "decision": "adapted"
+    },
+    {
+      "path": ".agents/skills/human-research-expression/references/hierarchy.md",
+      "decision": "adapted"
+    },
+    {
+      "path": ".agents/skills/human-research-expression/references/reader-maintenance.md",
+      "decision": "adapted"
+    },
+    {
+      "path": ".agents/skills/research-study/SKILL.md",
+      "decision": "adapted"
+    },
+    {
+      "path": ".gitattributes",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": ".gitignore",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "AGENTS.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "RESEARCH_PROTOCOL.md",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/README.md",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/cost-evaluation/README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/README.md",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/deep-game-analysis/decomposition-and-batching.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/dossier.py",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/knowledge-handoff.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/output-contract.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/check.py",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/navigation.js",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/test_build.py",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/test_modes.cjs",
+      "decision": "adapted"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reuse-evaluation.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/stable-baseline.json",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/test_dossier.py",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/verification.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/deep-game-analysis/workflow-control.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/development-support.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/media-capture.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "game-research/video-text.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "proactive/README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "proactive/reporting.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "proactive/review.py",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "proactive/reviews/README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "proactive/schedule-template.json",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "reference-library/README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "reference-library/catalog.json",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "sources.json",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "templates/validation-candidate.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    },
+    {
+      "path": "validation/README.md",
+      "decision": "preserved_public_adapter_or_deferred_unrelated_scope"
+    }
+  ],
+  "excluded": [
+    "all real studies, evidence, assets, corpora and runtime",
+    "uncommitted source changes",
+    "topic dossier extension pending standalone contract review",
+    "statistical figure helpers pending separate dependency/license review"
+  ],
+  "new_selected": [
+    "game-research/system-research/{README.md,reader-contract.md,build_reader.py,test_reader.py,reader-assets/prototype.js,reader-assets/reader.css}",
+    "game-research/deep-game-analysis/{report-polish.py,report-polish.md}"
+  ],
+  "public_baseline": "24102db97ef3adc0d39e5e8d9184102adce01702",
+  "version": "2.2.0",
+  "source_identity": {
+    "component": "Research",
+    "commit": "cc1a38d5b1b27fcc6ebf7c8ddd5b2cd70c57aa68",
+    "input": "committed Git blobs only"
+  },
+  "license_review": "No new third-party source or assets; every pre-existing license/notice/provenance/vendor byte retained.",
+  "projections": [
+    {
+      "path": ".agents/skills/game-evidence-collection/SKILL.md",
+      "source_sha256": "fcbe55913b344054df7c2bd67b6ddfaed0e733e7ea0e030e3f5b11137c37dafc"
+    },
+    {
+      "path": ".agents/skills/human-research-expression/references/hierarchy.md",
+      "source_sha256": "884e53c110ba34c30596267933b99fdbe64dae1c389d9943dcf3a7eea522d9f7"
+    },
+    {
+      "path": ".agents/skills/human-research-expression/references/reader-maintenance.md",
+      "source_sha256": "43d1fd643f20394d80d3648c18a8cf48ac3714976922493257fe90388802e438"
+    },
+    {
+      "path": ".agents/skills/human-research-expression/SKILL.md",
+      "source_sha256": "c6243b64b37f1798cec7f3b84b70d9e00f1bd9a71c0b77e33dcf70a3706dd899"
+    },
+    {
+      "path": ".agents/skills/research-study/SKILL.md",
+      "source_sha256": "5603d03b389c2a3a710ec1d5202fc65bdea0bc38ec5686f216c855ea759055bb"
+    },
+    {
+      "path": ".gitattributes",
+      "source_sha256": "72975cdcf22bb91da66fff34546c2ff7a4015f2dbb06904152c1d87980836c18"
+    },
+    {
+      "path": ".gitignore",
+      "source_sha256": "9b7abba1fb483fd8f8bdcdf506202007e485d90e813fee8130bbc4e9a1a4e472"
+    },
+    {
+      "path": "AGENTS.md",
+      "source_sha256": "9ed246190be286043f8d6ce7225c7a9de5c9a7e9dadedfb598bd54571bb92cb9"
+    },
+    {
+      "path": "game-research/cost-evaluation/README.md",
+      "source_sha256": "463c8628c98355d9290168f106aa78233d6ad605213d9ed9b98c40d0ece809ca"
+    },
+    {
+      "path": "game-research/deep-game-analysis/decomposition-and-batching.md",
+      "source_sha256": "27feecb38f2bab2609d6864d3dba3454fe70aed260fab2b6677e346bf56ababd"
+    },
+    {
+      "path": "game-research/deep-game-analysis/dossier.py",
+      "source_sha256": "2960b2022c40346293a1ae2569c7dda191b7c1c8ca80b148c95afdaa9ad0f98c"
+    },
+    {
+      "path": "game-research/deep-game-analysis/knowledge-handoff.md",
+      "source_sha256": "51ba6601e29c7eb27ecc87957b99989afc8d00f9f78c3842f1c29580b453dbbb"
+    },
+    {
+      "path": "game-research/deep-game-analysis/output-contract.md",
+      "source_sha256": "f02a94dd82bc828c5953ed861f1373376e65cfb368295cb39dd38a1a9239c457"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/check.py",
+      "source_sha256": "d3ab0b38141a3f871251d2a6d5e973fa22cfe0d4b21bf158178c7cbc06211488"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/navigation.js",
+      "source_sha256": "a0350dbd984ad6ad016ebea86986a74e42fbc69d0a775f6202180a3e991fc6c5"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/README.md",
+      "source_sha256": "f8bd98f059056c83371479020f19931c2fc2c03ddfcb975b7e33e43d22170ecf"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/test_build.py",
+      "source_sha256": "e7093b26edfeef347a2866e4db0948b0eb253959d6b5be611d1e51ef51996285"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reader-navigation/test_modes.cjs",
+      "source_sha256": "73392c726ded3eb9db60cdeee52cb8d1515718b79381ae7e13663f235f128272"
+    },
+    {
+      "path": "game-research/deep-game-analysis/README.md",
+      "source_sha256": "b529dc6b93a88772883ce7675dbbf5cfbc1ada34872effe4bcc0607a8181c015"
+    },
+    {
+      "path": "game-research/deep-game-analysis/report-polish.md",
+      "source_sha256": "1dfa3a5f01f5ae82e7e321dec1dc4ea4b41e0de0f95b9391be495801ea67e843"
+    },
+    {
+      "path": "game-research/deep-game-analysis/report-polish.py",
+      "source_sha256": "df6182e98884659b07b2600c09d322439093c5e1ef78a26f89b1afad4ebc9e35"
+    },
+    {
+      "path": "game-research/deep-game-analysis/reuse-evaluation.md",
+      "source_sha256": "5c5c39ddc0255f0eafa45adff73bd85b8d7829b0d297c0f1d0d82c9fe75fb142"
+    },
+    {
+      "path": "game-research/deep-game-analysis/stable-baseline.json",
+      "source_sha256": "89ab912c47db41f14c2f836a31a8c04e59199c1c8b5507da1f57977534ab9737"
+    },
+    {
+      "path": "game-research/deep-game-analysis/test_dossier.py",
+      "source_sha256": "892141582ffa1ac7c91c3faf758a7d1fa4346332747a11a702c19dc2b835ff7c"
+    },
+    {
+      "path": "game-research/deep-game-analysis/verification.md",
+      "source_sha256": "b54d256fa9b18a19200c1b8a157bdeed57880c91d5b4ad1799161066fa14e2d0"
+    },
+    {
+      "path": "game-research/deep-game-analysis/workflow-control.md",
+      "source_sha256": "bcd8918f95c82bce7aa49b1091753603ed5075d67fcb2718a9740e8078a88a39"
+    },
+    {
+      "path": "game-research/development-support.md",
+      "source_sha256": "48d1f9a5abe813c9506973913fcc44dcfa3acaef162641e0f44526e96745ef7c"
+    },
+    {
+      "path": "game-research/media-capture.md",
+      "source_sha256": "a42d2202b7ddde2bf1b1a7f67afdb4bca432fed8a45074a67fb328f81d80c1c9"
+    },
+    {
+      "path": "game-research/README.md",
+      "source_sha256": "e44560d41cb83b76bc3ddacd00c204eff18fd15e2bfc4ad7a02c85b1814425f1"
+    },
+    {
+      "path": "game-research/system-research/build_reader.py",
+      "source_sha256": "dcd2217852729cc3d7ab7f0a62dc13b1db05732fbc121476fe4faaa02cedc9d9"
+    },
+    {
+      "path": "game-research/system-research/reader-assets/prototype.js",
+      "source_sha256": "c78266346d12f33814db15df13f596add9937d836830b63a4ae91ef0170a7be3"
+    },
+    {
+      "path": "game-research/system-research/reader-assets/reader.css",
+      "source_sha256": "8082b6b05d8aefc0127c6fbee6a526b2a3797fa9ca0920b033ad747b211ea718"
+    },
+    {
+      "path": "game-research/system-research/reader-contract.md",
+      "source_sha256": "a80b728be4eedf413f746503751c91f25ac2fea91437904c71423eb7e3da5529"
+    },
+    {
+      "path": "game-research/system-research/README.md",
+      "source_sha256": "9757db2a5f1e000ccd141bb76841bf051d7ae6ddfb66eb7637bdabb46a606afd"
+    },
+    {
+      "path": "game-research/system-research/test_reader.py",
+      "source_sha256": "56ac020433cf213844e25c8dbf33a252f5a7c99ead806a97a304a9f619871771"
+    },
+    {
+      "path": "game-research/video-text.md",
+      "source_sha256": "87f6f58d19b55b02b5255a4e126688c9e0940a37edc1b5ffc2eb08f5ea7d9a18"
+    },
+    {
+      "path": "proactive/README.md",
+      "source_sha256": "881389c5806d215b675a7dda930a2126c42c62751e0941effd6e5d1c8b8d50b6"
+    },
+    {
+      "path": "proactive/reporting.md",
+      "source_sha256": "36a2d1f870b7393b5ef3bcca924605509baecbe6698729a5034992c25cdf57a2"
+    },
+    {
+      "path": "proactive/review.py",
+      "source_sha256": "35076309f6b0527d717470ec146d6fd8112a4ef044049a97f8a5973061db4c8e"
+    },
+    {
+      "path": "proactive/reviews/README.md",
+      "source_sha256": "671b0c45befc4f1ac21574c2f656d81aa75bd7be84a83854c46dab458b3e5322"
+    },
+    {
+      "path": "proactive/schedule-template.json",
+      "source_sha256": "ece00dd5e6fb1daba6c6ea525952b1ed5c3e7938c3ad0d6a0bd0c62eb1678290"
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "a9c30c2d8ef46889a785da240a1bb8103ea5247734397bc91d7db7f8fcbbd367"
+    },
+    {
+      "path": "reference-library/catalog.json",
+      "source_sha256": "28724227ce0d1862a3d31e14ff539b6f1d82491278b3b2009ca69095c838c6e3"
+    },
+    {
+      "path": "reference-library/README.md",
+      "source_sha256": "a31ea8639e3383d1383c9889f064807a71de46bad57aca0888f86bd57e76767b"
+    },
+    {
+      "path": "RESEARCH_PROTOCOL.md",
+      "source_sha256": "112ee45f687ff748c61c1c379f79bfb2725e082ea4183e37e9e2962604825c42"
+    },
+    {
+      "path": "sources.json",
+      "source_sha256": "3a24858bc18b3818a30bad8fb237261aca4baa3b5e607f54dee2490b183a7d1f"
+    },
+    {
+      "path": "templates/validation-candidate.md",
+      "source_sha256": "b973f7d268dbcea39ef1a7c64cf68e2c92495ac34ab38ca2d24ccb66dc1df0b1"
+    },
+    {
+      "path": "validation/README.md",
+      "source_sha256": "b53f77047e12acfce9e7382b176cb40e7cf917210866708ce9fb2ee16ae8bdbd"
+    }
+  ]
+}

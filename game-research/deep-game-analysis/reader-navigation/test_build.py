@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from build import build,sha,strip_navigation,validate_routes
-from check import AttributeCheck
+from check import AttributeCheck,check
 
 class NavigationBuildTests(unittest.TestCase):
     def setUp(self):
@@ -52,6 +52,15 @@ class NavigationBuildTests(unittest.TestCase):
         self.assertIn('id="rn-guide-diagram"',text)
         self.assertIn('data-route="one" data-step="0" data-target="diagram"',text)
         self.assertEqual(strip_navigation(text),self.original)
+    def test_checker_accepts_crlf_without_changing_approved_script_bytes(self):
+        self.original=self.original.replace('<html>','<html><meta charset="utf-8">').replace('/*原代码*/','/*原代码*/\r\nconst sample="原脚本";\r\n')
+        (self.report/'reader/index.html').write_bytes(self.original.encode())
+        self.config['base_html_sha256']=sha(self.original.encode());self.save()
+        build(self.report)
+        result=check(self.report)
+        self.assertTrue(result['checks']['original_scripts_unchanged'])
+        self.assertTrue(result['checks']['all_scripts_parsed_completely'])
+        self.assertEqual(strip_navigation((self.report/'reader/index.html').read_bytes().decode()),self.original)
     def test_raw_duplicate_id_attributes_are_not_hidden_by_tree_parsing(self):
         invalid='<a href="#generated"><img id="generated" id="scene-photo" src="data:,x"></a>'
         self.assertEqual(AttributeCheck(invalid).repeated,['img'])

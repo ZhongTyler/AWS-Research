@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "research",
   "name": "Research",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "repository": "https://github.com/ZhongTyler/AWS-Research.git",
   "payload": ".",
   "entrypoints": {
@@ -12,7 +12,9 @@
   },
   "runtime": [
     "Python 3.10+",
-    "Node.js 22+ for selected integrations"
+    "Node.js 22+ for selected integrations",
+    "Optional system HTML reader: lxml + PowerShell 7 ConvertFrom-Markdown",
+    "Optional report editor: lxml + explicitly configured compatible local executor"
   ],
   "provides": [
     "research"
@@ -62,7 +64,7 @@
       "schema_version": 1,
       "id": "skills",
       "name": "Skills",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "repository": "https://github.com/ZhongTyler/AWS-Skills.git",
       "purpose": "Select individual agent methods without enabling the whole library.",
       "interfaces": [
