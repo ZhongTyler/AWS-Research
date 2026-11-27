@@ -1,5 +1,13 @@
 # Research
 
+Adds standalone backlog maintenance preserving goals and selection context, one current record per question and separate research/local/online receipt status. Includes a recipient-owned blank template, no private queue or reports.
+[Release and recovery](docs/releases/2.3.0.md)
+
+## Task entry points
+
+Start or resume with the [research protocol](RESEARCH_PROTOCOL.md). Organize multiple questions and asynchronous receipts through [backlog maintenance](game-research/backlog-maintenance.md); recipient-owned queues stay outside this package. Use the [report template](templates/research-note.md) only when a file is needed.
+
+
 [简体中文](README.md)
 
 Collect sources and compile traceable studies and reader navigation.

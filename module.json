@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "research",
   "name": "Research",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "repository": "https://github.com/ZhongTyler/AWS-Research.git",
   "payload": ".",
   "entrypoints": {

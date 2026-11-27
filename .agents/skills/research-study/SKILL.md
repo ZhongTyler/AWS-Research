@@ -16,3 +16,5 @@ description: 围绕具体问题开展有来源、有适用边界的研究并交�
 研究交付同时核对专业内容、案例与反例，以及可复用原件的实际去向。工具或知识承接按接收方能力和授权执行，保留缺口、后续使用条件及实际消费反馈。表达按读者要理解的事件、关系或机制选择，复用 [表达选型](../human-research-expression/references/expression-selection.md)，单文件交付使用 [依赖审计](../human-research-expression/references/sharing-and-dependencies.md)。
 
 系统局部研究可按[完整系统入口](../../../game-research/system-research/README.md)组织证据、报告与独立原型；同源 HTML 可提供保留试玩状态的浮层。编辑按[可选报告适配](../../../game-research/deep-game-analysis/report-polish.md)绑定当前稿、真实调用和整页／逐项审订范围。
+
+维护研究清单、阶段／最终稿收口或异步接入回核时，沿[清单维护约定](../../../game-research/backlog-maintenance.md)更新原题，保留目标与决策信息；研究、本地接受和线上状态按各自实际结果记录。

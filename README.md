@@ -1,5 +1,17 @@
 # Research
 
+新增可独立使用的研究清单规则：保留目标与选择依据，同题续接，研究、本地接受及线上同步分别回核。提供包外空白模板，不携带维护者的真实队列或报告。
+[Release and recovery](docs/releases/2.3.0.md)
+
+## 按任务进入
+
+| 当前需要 | 入口 |
+|---|---|
+| 开题或恢复研究 | [研究协议](RESEARCH_PROTOCOL.md) |
+| 组织多题、接回结果或恢复等待项 | [清单维护](game-research/backlog-maintenance.md) |
+| 从空白报告开始 | [报告模板](templates/research-note.md) |
+
+
 
 [English](README.en.md)
 
